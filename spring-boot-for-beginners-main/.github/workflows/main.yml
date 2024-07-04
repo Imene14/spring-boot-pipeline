@@ -20,10 +20,10 @@ jobs:
           java-version: 17
 
       - name: Unit Tests
-        run: mvn -B test --file pom.xml
+        run: mvn -B test --file spring-boot-for-beginners-main/pom.xml
 
       - name: Build the application
         run: |
           mvn clean
-          mvn -B package --file pom.xml
+          mvn -B package --file spring-boot-for-beginners-main/pom.xml
           
